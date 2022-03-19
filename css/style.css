@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600;700&display=swap');
+* {font-family: "Libre Franklin", sans-serif; font-weight: 300;}
+body {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    position: relative;
+}
+button {
+    background-color: hsl(223, 87%, 63%);
+    border: none;
+    color: #fff;
+    width: 30%;
+}
+button:hover {
+    cursor: pointer;
+    opacity: 75%;
+}
+button, input { 
+    border-radius: 25px;
+    padding: 0.75rem 0; 
+}
+form { height: 7.5rem; }
+footer { position: absolute; bottom: 0;}
+h1 {margin-bottom: 0;}
+h1 span { font-weight: 700;}
+h1,.attribution, .copyright { color: hsl(0, 0%, 59%);}
+h1 span, p, .attribution a { color: hsl(209, 33%, 12%);}
+input {
+    border: 1px solid hsl(223, 100%, 88%);
+    width: 60%;
+    margin: 1.5rem 1rem 0 0;
+    padding-left: 1rem;
+}
+input:focus { border: 1px solid hsl(223, 87%, 63%); outline: none;}
+main {
+    width: 30rem;
+    margin: auto;
+}
+p {margin-top: 0.75rem;}
+::placeholder { color: hsl(223, 100%, 88%); }
+.attribution, .copyright { font-size: 11px; margin-bottom: 0;}
+.dashboard { width: 100%; }
+.error {
+    color: red;
+    font-style: italic;
+    font-size: 12px;
+    text-align: left;
+    padding: 0.5rem 0 0 1.5rem;
+}
+.icon {
+    color: hsl(223, 87%, 63%);
+    border: 1px solid hsl(223, 100%, 88%);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.75rem;
+}
+.icon:hover {
+    color:#fff;
+    background-color: hsl(223, 87%, 63%);
+    cursor: pointer;
+}
+.invalid { border: 2px solid red;}
+.logo { margin: 2rem 0 0.5rem;}
+.social { 
+    margin: 3rem 0 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+    body {margin: 0 5%;}
+    input, button, main {box-sizing: border-box; width: 100%;}
+    button { 
+        margin: 1rem 0 3rem;
+        order: 3;
+    }
+    form { height: auto; display: flex; flex-direction: column;}
+    footer {position: relative;}
+    h1 {font-size: 32px;}
+    p {font-size: 16px;}
+    input {order: 1;}
+    .error {
+        order: 2;
+        text-align: center;
+        padding-bottom: 0.5rem;
+    }
+    .social {margin: 5rem 0 2rem;}
+}
